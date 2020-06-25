@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 微軟正黑體;
+}
+
+/* 整個頁面大小 */
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* 上排header放置banner處 */
+
+.header{
+    background: url(../assets/Hero.png) ;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.header h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 550;
+    letter-spacing: 3.89px;
+}
+
+@media (max-width: 768px){
+    .header{
+        background: url(../assets/the-urban-landscape-1698285.png) ;
+        width: 100%;
+    }
+
+}
+
+#areasOption{
+    width: 60%;
+    height: 48px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("../assets/icons_down.png") no-repeat right center rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #000000;
+    line-height: 21px;
+}
+
+
+#areasOption option{
+    font-size: 18px;
+    color: #000000;
+    line-height: 21px;
+}
+
+
+
+.popular-areas{
+    max-width: 90%;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: -50px;
+}
+
+.popular-areas p{
+    font-size: 18px;
+    font-weight: 550;
+    padding: 15px;
+}
+
+.popular-areas .btn{
+    width: 130px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.popular-areas .btn1{
+    background-color: #8A82CC;
+}
+
+.popular-areas .btn2{
+    background-color: #FFA782;
+}
+
+.popular-areas .btn3{
+    background-color: #F5D105;
+}
+
+.popular-areas .btn4{
+    background-color: #559AC8;
+}
+
+@media (max-width: 768px){
+    .popular-areas{
+        display: none;
+    }
+
+}
+
+/* 中間顯示地區 */
+
+.content{
+    padding-top: 80px;
+    background-color: #f2f1fc;
+}
+
+@media (max-width: 768px){
+    .content{
+        padding-top: 20px;
+    }
+}
+
+.content h3{
+    text-align: center;
+    font-size: 36px;
+    color: #8A82CC;
+
+}
+
+.area-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.areas-items{
+   width: 450px;
+   margin-top: 20px;
+   margin-bottom: 25px;
+}
+
+@media (max-width: 768px){
+    .areas-items{
+        width: 90%;
+    }
+
+}
+
+.areas-items .top{
+    background: center;
+    width: 100%;
+    height: 150px;
+    background-size: cover!important;
+    background-position: center!important;
+    position: relative;
+}
+
+.top .items-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 5px;
+}
+
+.top p{
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 5px;
+}
+
+.bottom{
+    height: 80px;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.bottom img{
+    margin-right: 10px;
+}
+
+.bottom p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ticket{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* footer部分 */
+
+.footer{
+    background-color: #559AC8;
+    padding: 20px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+.footer span{
+    color: #FFD366;
+}
